@@ -1,0 +1,125 @@
+  
+{
+	"allowedAddresses": [
+    "0x07d7d7127b3dc08b727a5e64e77228be2970f175",
+    "0x0000000000000000000000000000000000000000"
+  ],
+  "first": 100,
+  "skip": 0,
+  "mainClass": [
+    "Archer",
+    "DarkKnight",
+    "Dragoon",
+    "DreadKnight",
+    "Knight",
+    "Monk",
+    "Ninja",
+    "Paladin",
+    "Pirate",
+    "Priest",
+    "Sage",
+    "Summoner",
+    "Thief",
+    "Warrior",
+    "Wizard"
+  ],
+  "subClass": [
+    "Archer",
+    "DarkKnight",
+    "Dragoon",
+    "DreadKnight",
+    "Knight",
+    "Monk",
+    "Ninja",
+    "Paladin",
+    "Pirate",
+    "Priest",
+    "Sage",
+    "Summoner",
+    "Thief",
+    "Warrior",
+    "Wizard"
+  ],
+  "elements": [
+    "fire",
+    "water",
+    "earth",
+    "wind",
+    "lightning",
+    "ice",
+    "light",
+    "dark"
+  ],
+  "rarity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "generation": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "gender": [
+    "male",
+    "female"
+  ],
+  "shiny": [
+    true,
+    false
+  ],
+  "profession": [
+    "foraging",
+    "gardening",
+    "mining",
+    "fishing"
+  ],
+  "statboost": [
+    "STR",
+    "INT",
+    "WIS",
+    "LCK",
+    "AGI",
+    "VIT",
+    "END",
+    "DEX"
+  ],
+  "priceGt": "0",
+  "priceLt": "9999999000000000000000000",
+  "hpGt": 0,
+  "hpLt": 9999,
+  "mpGt": 0,
+  "mpLt": 9999,
+  "staminaGt": 0,
+  "staminaLt": 9999,
+  "strengthGt": 0,
+  "strengthLt": 9999,
+  "intelligenceGt": 0,
+  "intelligenceLt": 9999,
+  "wisdomGt": 0,
+  "wisdomLt": 9999,
+  "luckGt": 0,
+  "luckLt": 9999,
+  "agilityGt": 0,
+  "agilityLt": 9999,
+  "vitalityGt": 0,
+  "vitalityLt": 9999,
+  "enduranceGt": 0,
+  "enduranceLt": 9999,
+  "dexterityGt": 0,
+  "dexterityLt": 9999,
+  "orderBy": "salePrice",
+  "orderDirection": "asc",
+  "now": "1637247029033"
+}

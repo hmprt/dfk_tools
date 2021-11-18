@@ -51,8 +51,35 @@ def get_heroes_and_stamina(address: str) -> List[dict]:
     ]
 
 
+def get_all_heroes_floor() -> float:
+    """Floor price for heroes in Jewel"""
+    response = requests.post(
+        url,
+        data=json.dumps(
+            {
+                "query": get_all_heroes_floor_query,
+                "variables": get_all_heroes_floor_params,
+            }
+        ),
+    )
+    return (
+        int(
+            json.loads(response.text)["data"]["heros"][0]["saleAuction"][
+                "startingPrice"
+            ]
+        )
+        / 10 ** 18
+    )
+
+
 if __name__ == "__main__":
+    
+    # hero stamina
     heroes = get_heroes_and_stamina(os.environ["DFK_ADDRESS"])
     from pprint import pprint
+
     for hero in heroes:
         pprint(hero)
+
+    # hero floor price
+    print(f"Floor price: {str(get_all_heroes_floor())} JEWEL")

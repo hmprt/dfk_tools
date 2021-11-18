@@ -2,4 +2,4 @@
 
 ## Usage:
 - Set `DFK_ADDRESS` to the Harmony address holding your hero
-- Run `python3 get_char_stats.py`
+- Run `python3 main.py`
