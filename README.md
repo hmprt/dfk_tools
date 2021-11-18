@@ -1,3 +1,5 @@
 # CLI tools to track the defikingdoms ecosystem
-- Just some experiments for now
-- https://defikingdoms.com
+
+## Usage:
+- Set `DFK_ADDRESS` to the Harmony address holding your hero
+- Run `python3 get_char_stats.py`
