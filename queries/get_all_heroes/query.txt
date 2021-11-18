@@ -1,0 +1,148 @@
+
+    query getUserHeroes(
+      $owner: String!
+      $mainClass: [String!]!
+      $subClass: [String!]!
+      $elements: [String!]!
+      $rarity: [Int!]!
+      $generation: [Int!]!
+      $gender: [String!]!
+      $shiny: [Boolean!]!
+      $profession: [String!]!
+      $statboost: [String!]!
+      $hpGt: Int!
+      $hpLt: Int!
+      $mpGt: Int!
+      $mpLt: Int!
+      $staminaGt: Int!
+      $staminaLt: Int!
+      $strengthGt: Int!
+      $strengthLt: Int!
+      $intelligenceGt: Int!
+      $intelligenceLt: Int!
+      $wisdomGt: Int!
+      $wisdomLt: Int!
+      $luckGt: Int!
+      $luckLt: Int!
+      $agilityGt: Int!
+      $agilityLt: Int!
+      $vitalityGt: Int!
+      $vitalityLt: Int!
+      $enduranceGt: Int!
+      $enduranceLt: Int!
+      $dexterityGt: Int!
+      $dexterityLt: Int!
+    ) {
+      heros(
+        where: {
+          owner: $owner
+          mainClass_in: $mainClass
+          subClass_in: $subClass
+          element_in: $elements
+          rarity_in: $rarity
+          generation_in: $generation
+          profession_in: $profession
+          gender_in: $gender
+          shiny_in: $shiny
+          statBoost1_in: $statboost
+          hp_gte: $hpGt
+          hp_lte: $hpLt
+          mp_gte: $mpGt
+          mp_lte: $mpLt
+          stamina_gte: $staminaGt
+          stamina_lte: $staminaLt
+          strength_gte: $strengthGt
+          strength_lte: $strengthLt
+          intelligence_gte: $intelligenceGt
+          intelligence_lte: $intelligenceLt
+          wisdom_gte: $wisdomGt
+          wisdom_lte: $wisdomLt
+          luck_gte: $luckGt
+          luck_lte: $luckLt
+          agility_gte: $agilityGt
+          agility_lte: $agilityLt
+          vitality_gte: $vitalityGt
+          vitality_lte: $vitalityLt
+          endurance_gte: $enduranceGt
+          endurance_lte: $enduranceLt
+          dexterity_gte: $dexterityGt
+          dexterity_lte: $dexterityLt
+        }
+      ) {
+        ...heroAttributes
+      }
+    }
+    
+  fragment heroAttributes on Hero {
+    id
+    owner {
+      name
+      id
+      picId
+    }
+    shiny
+    shinyStyle
+    statGenes
+    visualGenes
+    rarity
+    firstName
+    lastName
+    mainClass
+    subClass
+    generation
+    gardening
+    mining
+    fishing
+    foraging
+    strength
+    intelligence
+    dexterity
+    endurance
+    wisdom
+    agility
+    luck
+    vitality
+    mp
+    hp
+    stamina
+    sp
+    status
+    staminaFullAt
+    level
+    xp
+    currentQuest
+    hpFullAt
+    mpFullAt
+    strengthGrowthP
+    intelligenceGrowthP
+    dexterityGrowthP
+    enduranceGrowthP
+    wisdomGrowthP
+    agilityGrowthP
+    luckGrowthP
+    vitalityGrowthP
+    hpSmGrowth
+    hpRgGrowth
+    hpLgGrowth
+    mpSmGrowth
+    mpRgGrowth
+    mpLgGrowth
+    strengthGrowthS
+    intelligenceGrowthS
+    dexterityGrowthS
+    enduranceGrowthS
+    wisdomGrowthS
+    agilityGrowthS
+    luckGrowthS
+    vitalityGrowthS
+    summonedTime
+    maxSummons
+    summons
+    nextSummonTime
+    summonerId {
+      id
+    }
+    assistantId {
+      id
+    }
+  }
